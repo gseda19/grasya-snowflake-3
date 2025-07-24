@@ -41,6 +41,7 @@ flags:
     error: all
     silence:
       - DepsUnpinned
+      - DynamicTableConfigurationWarning
     warn:
       - NoNodesForSelectionCriteria
       - NothingToDo
