@@ -3,7 +3,6 @@
     materialized="dynamic_table",
     target_lag="15 minutes",
     snowflake_warehouse="MY_WH",
-    tags=["dynamic_table"] 
 ) }}
 
 select
