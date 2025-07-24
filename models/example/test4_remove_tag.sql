@@ -2,8 +2,7 @@
     materialized = "dynamic_table",
     alias = "test4_table",
     snowflake_warehouse = "MY_WH",
-    target_lag = "15 minutes",
-    tags = ["dynamic_table"]
+    target_lag = "15 minutes"
 ) }}
 
 select
