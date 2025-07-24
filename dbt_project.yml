@@ -46,7 +46,7 @@ flags:
       - NothingToDo
       
 models:
-  +on_schema_change: fail
+  +on_schema_change: ignore
   my_new_project:
     # Applies to all files under models/example/
     example:
