@@ -3,7 +3,7 @@
     materialized="dynamic_table",
     target_lag="15 minutes",
     snowflake_warehouse="MY_WH",
-    on_schema_change = "fail"
+    on_schema_change = "fail",
     tags=["dynamic_table"]
 ) }}
 
