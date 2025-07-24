@@ -39,7 +39,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 flags:
   warn_error_options:
     error: all
-    
+    silence:
+      - DepsUnpinned
+    warn:
+      - NoNodesForSelectionCriteria
+      - NothingToDo
+      
 models:
   +on_schema_change: fail
   my_new_project:
