@@ -5,8 +5,6 @@
     snowflake_warehouse="MY_WH",
     on_configuration_change="fail",
     tags=["dynamic_table"]
-
-    tags=["dynamic_table"]
 ) }}
 
 select
