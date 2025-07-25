@@ -1,0 +1,12 @@
+version: 2
+
+models:
+
+  - name: stg_moo
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('moo', v=1)
+              field: id

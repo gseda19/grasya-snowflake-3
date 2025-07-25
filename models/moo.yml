@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: moo
+    description: Example unversioned model
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+          

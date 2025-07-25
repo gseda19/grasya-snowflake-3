@@ -36,19 +36,3 @@ clean-targets:         # directories to be removed by `dbt clean`
 # continue to be built as views. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 
-flags:
-  warn_error_options:
-    error: all
-    silence:
-      - DepsUnpinned
-    warn:
-      - NoNodesForSelectionCriteria
-      - NothingToDo
-      
-models:
-  +on_schema_change: ignore
-  my_new_project:
-    # Applies to all files under models/example/
-    example:
-      +schema: raw
-      +database: MY_DB
