@@ -1,3 +1,3 @@
 {{ config(materialized='table') }}
-select *
+select id
 from {{ ref('base_model') }}
