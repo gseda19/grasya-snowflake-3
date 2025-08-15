@@ -5,5 +5,5 @@
 ) }}
 
 select
-    *
+    id
 from {{ ref('model2') }}
