@@ -5,5 +5,5 @@
     refresh_mode='incremental',
     initialize='on_create'
 ) }}
-select id
+select id, first_name
 from {{ ref('baz') }}
